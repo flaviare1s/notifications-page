@@ -2,7 +2,10 @@ import { Notification } from "./Notification";
 import avatarMarkWebber from "../assets/images/avatar-mark-webber.webp";
 import avatarAngelaGray from "../assets/images/avatar-angela-gray.webp";
 import avatarJacobThompson from "../assets/images/avatar-jacob-thompson.webp";
-
+import avatarRizkyHasanuddin from "../assets/images/avatar-rizky-hasanuddin.webp";
+import avatarKimberlySmith from "../assets/images/avatar-kimberly-smith.webp";
+import avatarNathanPeterson from "../assets/images/avatar-nathan-peterson.webp";
+import avatarAnnaKim from "../assets/images/avatar-anna-kim.webp";
 
 export const Notifications = () => {
   return (
@@ -15,7 +18,6 @@ export const Notifications = () => {
         postTime="1m ago"
         read={false}
       />
-
       <Notification
         name="Angela Gray"
         photo={avatarAngelaGray}
@@ -23,30 +25,45 @@ export const Notifications = () => {
         postTime="5m ago"
         read={false}
       />
-
-<Notification
+      <Notification
         name="Jacob Thompson"
         photo={avatarJacobThompson}
         action="has joined your group"
-        title= "Chess Club"
+        title="Chess Club"
         postTime="1 day ago"
         read={false}
+      />
+      <Notification
+        name="Rizky Hasanuddin"
+        photo={avatarRizkyHasanuddin}
+        action="sent you a private message"
+        message="Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+        postTime="5 days ago"
+        read={true}
+      />
+      <Notification
+        name="Kimberly Smith"
+        photo={avatarKimberlySmith}
+        action="commented on your picture"
+        postTime="1 week ago"
+        read={true}
+      />
+      <Notification
+        name="Nathan Peterson"
+        photo={avatarNathanPeterson}
+        action="reacted to your recent post"
+        title="5 end-game strategies to increase your win rate"
+        postTime="2 weeks ago"
+        read={true}
+      />
+      <Notification
+        name="Anna Kim"
+        photo={avatarAnnaKim}
+        action="left the group"
+        title="Chess Club"
+        postTime="2 weeks ago"
+        read={true}
       />
     </div>
   );
 };
-
-
-// Rizky Hasanuddin sent you a private message
-// 5 days ago
-// Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-// I'm already having lots of fun and improving my game.
-
-// Kimberly Smith commented on your picture
-// 1 week ago
-
-// Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-// 2 weeks ago
-
-// Anna Kim left the group Chess Club
-// 2 weeks ago
