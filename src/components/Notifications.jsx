@@ -1,5 +1,8 @@
 import { Notification } from "./Notification";
 import avatarMarkWebber from "../assets/images/avatar-mark-webber.webp";
+import avatarAngelaGray from "../assets/images/avatar-angela-gray.webp";
+import avatarJacobThompson from "../assets/images/avatar-jacob-thompson.webp";
+
 
 export const Notifications = () => {
   return (
@@ -8,19 +11,31 @@ export const Notifications = () => {
         name="Mark Webber"
         photo={avatarMarkWebber}
         action="reacted to your recent post"
-        postTitle="My first tournament today!"
+        title="My first tournament today!"
         postTime="1m ago"
-        read={true}
+        read={false}
+      />
+
+      <Notification
+        name="Angela Gray"
+        photo={avatarAngelaGray}
+        action="followed you"
+        postTime="5m ago"
+        read={false}
+      />
+
+<Notification
+        name="Jacob Thompson"
+        photo={avatarJacobThompson}
+        action="has joined your group"
+        title= "Chess Club"
+        postTime="1 day ago"
+        read={false}
       />
     </div>
   );
 };
 
-// Angela Gray followed you
-// 5m ago
-
-// Jacob Thompson has joined your group Chess Club
-// 1 day ago
 
 // Rizky Hasanuddin sent you a private message
 // 5 days ago
