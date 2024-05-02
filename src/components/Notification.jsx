@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types'
 
-export const Notification = ({ name, photo, action, postTitle, postTime }) => {
+export const Notification = ({ name, photo, action, postTitle, postTime, read }) => {
   return (
-    <div key={name} className='flex justify-between items-center gap-5 bg-very_light_grayish_blue p-4 text-sm md:text-base rounded-lg'>
+    <div key={name} className={`flex justify-between items-center gap-5 p-4 text-sm md:text-base rounded-lg ${read ? 'bg-white' : 'bg-very_light_grayish_blue'}`}>
       <div className='w-10 h-10 md:w-11 md:h-11' style={{ aspectRatio: '1/1' }}>
         <img className='w-full h-full' src={photo} alt={"Mark Webber"} />
       </div>
       <div>
         <p>
-          <span className='font-extrabold text-very_dark_blue'>{name} </span> 
+          <span className='font-extrabold text-very_dark_blue hover:text-blue'><a href="#">{name}</a> </span> 
           <span className='font-medium text-dark_grayish_blue'>{action} </span> 
-          <span className='font-bold text-dark_grayish_blue'>{postTitle}</span>
-          <span className='w-2 h-2 bg-red rounded-full inline-block ml-[7px]'></span>
+          <span className='font-bold text-dark_grayish_blue hover:text-blue'><a href="#">{postTitle}</a></span>
+          { !read && <span className='w-2 h-2 bg-red rounded-full inline-block ml-[7px]'></span> }
         </p>
         <p className='font-medium text-grayish_blue'>{postTime}</p>
       </div>

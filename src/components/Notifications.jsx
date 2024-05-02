@@ -10,6 +10,7 @@ export const Notifications = () => {
         action="reacted to your recent post"
         postTitle="My first tournament today!"
         postTime="1m ago"
+        read={true}
       />
     </div>
   );
