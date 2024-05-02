@@ -14,7 +14,7 @@ export const Notification = ({ name, photo, action, title, message, postTime, re
           { !read && <span className='w-2 h-2 bg-red rounded-full inline-block ml-[7px]'></span> }
         </p>
         <p className='font-medium text-grayish_blue'>{postTime}</p>
-        <p>{message}</p>
+        {message && <p className='text-dark_grayish_blue_1 text-sm md:text-base border border-light_grayish_blue_2 p-4 m-4 rounded-[5px] hover:bg-light_grayish_blue_1 cursor-pointer'>{message}</p>}
       </div>
     </div>
   );
