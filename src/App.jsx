@@ -1,8 +1,10 @@
+import { Footer } from "./components/Footer";
+
 export function App() {
 
 
   return (
-    <>
+    <div className="font-Jakarta">
      Notifications 3
 
 Mark all as read
@@ -29,6 +31,7 @@ Nathan Peterson reacted to your recent post 5 end-game strategies to increase yo
 
 Anna Kim left the group Chess Club
 2 weeks ago
-    </>
+<Footer/>
+    </div>
   )
 }
