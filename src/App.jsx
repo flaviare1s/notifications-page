@@ -71,19 +71,18 @@ export function App() {
   ])
 
   const markAllAsRead = () => {
-    const updatedNotifications = notifications.map(notification => ({
+    setNotifications(prevNotifications => prevNotifications.map(notification => ({
       ...notification,
       read: true,
-    }));
-    setNotifications(updatedNotifications);
-    setCount(0); 
+    })))
+    setCount(0)
   }
 
   return (
     <div className="font-Jakarta flex flex-col justify-center items-center m-auto w-full px-4 md:w-[80%] lg:w-[70%] pt-6 pb-7">
       <Header count={count} markAllAsRead={markAllAsRead}/>
-      <Notifications setCount={setCount} />
+      <Notifications notifications={notifications} setCount={setCount} />
       <Footer />
     </div>
-  );
+  )
 }

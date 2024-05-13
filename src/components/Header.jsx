@@ -6,5 +6,5 @@ export const Header = ({ count, markAllAsRead}) => {
       </h1>
       <button onClick={markAllAsRead} className="text-dark_grayish_blue text-sm font-medium hover:text-blue md:text-base">Mark all as read</button>
     </div>
-  );
-};
+  )
+}

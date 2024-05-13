@@ -17,8 +17,8 @@ export const Notification = ({ name, photo, action, title, message, postTime, re
         {message && <p className='text-dark_grayish_blue_1 text-sm md:text-base border border-light_grayish_blue_2 p-4 m-4 rounded-[5px] hover:bg-light_grayish_blue_1 cursor-pointer'>{message}</p>}
       </div>
     </div>
-  );
-};
+  )
+}
 
 Notification.propTypes = {
     name: PropTypes.string.isRequired,
