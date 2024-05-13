@@ -79,8 +79,8 @@ export function App() {
   }
 
   return (
-    <div className="font-Jakarta flex flex-col justify-center items-center m-auto w-full px-4 pt-6 pb-7 bg-very_light_grayish_blue">
-      <div className="flex flex-col justify-center items-center m-auto w-full px-4 md:w-[80%] lg:w-[60%]">
+    <div className="font-Jakarta flex flex-col justify-center items-center m-auto w-full bg-very_light_grayish_blue">
+      <div className="flex flex-col justify-center items-center m-auto w-full px-4 pt-6 pb-7 bg-white md:w-[80%] lg:w-[60%]">
         <Header count={count} markAllAsRead={markAllAsRead}/>
         <Notifications notifications={notifications} setCount={setCount} />
         <Footer />
